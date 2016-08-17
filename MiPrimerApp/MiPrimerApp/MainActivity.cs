@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace MiPrimerApp
 {
-    [Activity(Label = "Phone Word", MainLauncher = true)]
+    [Activity(Label = "Numero Telefonico", MainLauncher = true)]
     public class MainActivity : Activity
     {
         //int count = 1;
@@ -43,7 +43,7 @@ namespace MiPrimerApp
                     callButton.Enabled = true;
                 }
             };
-            callButton.Click += (object sender, EventArgs e) =>
+            callButton.Click +=(object sender, EventArgs e) =>
             {
                 var callDialog = new AlertDialog.Builder(this);
                 callDialog.SetMessage("¿Llamar al numero? " + translatedNumber);
@@ -57,7 +57,10 @@ namespace MiPrimerApp
 
                 callDialog.Show();
             };
-        } 
-    }
+        }
+
+       
+    } 
+    
 }
 
